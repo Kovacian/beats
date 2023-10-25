@@ -1,0 +1,196 @@
+@charset "utf-8";
+body {
+    background-image: url('BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+hl {
+    color: #FF5733; /* Red */
+    text-align: center;
+    padding: 5px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+#container {
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    background-color: #63060f; /* Orange */
+    float: left;
+    padding: 5px;
+    margin-left: 10%;
+    color:rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+footer {
+    clear: both;
+    background-color: #a13202; /* Skin Tone */
+    color: #ffffff;
+    text-align: center;
+    margin-left: 10%;
+    padding: 5px;
+    font-size: 12pt;
+    width: 80%;
+    border-radius: 10px;
+}
+
+nav {
+    color: #ff5739; /* Red */
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    padding: 15px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    display: block;
+    width: 150px;
+    margin-right: 4px;
+    color: #a50238; /* Red */
+    padding: 2px 4px 2px 4px;
+    background-color: #FFA500; /* Orange */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background-color: #FF5733; /* Red */
+}
+
+#tableground {
+    background-color: #FF5733; /* Red */
+    width: 100%;
+    padding: 50px;
+    text-decoration-style: bold;
+    color: white;
+    text-align: center;
+}
+
+.bwpurple {
+    text-decoration: wavy;
+    color: rgb(5, 87, 141);
+    font-weight: bold;
+}
+
+#redrow {
+    background-color: #FF5733; /* Red */
+}
+
+.redcenter {
+    color: #FF5733; /* Red */
+    text-align: center;
+    text-decoration: underline;
+}
+
+#padding {
+    padding: 50px;
+    border-color: crimson;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(45deg, #d6c422, #a54078, #f84242); /* Red, Orange, Skin Tone */
+    color: #ff0000; /* Text color before hover (Red) */
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #FF5733, #FFA500, #FFC0A4); /* Red, Orange, Skin Tone */
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    color: #000000; /* Text color after hover (Orange) */
+}
+
+.button:hover::before {
+    left: 100%;
+    opacity: 1;
+}
+
+/* Style the audio player container */
+audio {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+/* Style the play button */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-start-playback-button {
+    background-color: #FF5733; /* Red */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+/* Style the volume control */
+audio::-webkit-media-controls-volume-slider {
+    width: 100px;
+}
+
+/* Style the progress bar */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-toggle-closed-captions-button,
+audio::-webkit-media-controls-mute-button {
+    color: #FF5733; /* Red */
+}
+
+/* Style the background of the audio player */
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(45deg, #FF5733, #FFA500, #FFC0A4); /* Red, Orange, Skin Tone */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the volume slider container */
+audio::-webkit-media-controls-volume-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style the volume slider */
+audio::-webkit-media-controls-volume-slider-container {
+    flex: 1;
+}
+
+/* Style the volume icon */
+audio::-webkit-media-controls-mute-button {
+    color: #FF5733; /* Red */
+    font-size: 20px;
+}
